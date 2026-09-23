@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Embolden Partners works with VC-backed founders and portfolio teams to build GTM strategy, partnership ecosystems, and commercial operating systems that turn early traction into repeatable revenue.">
+  <meta name="theme-color" content="#1D1A35">
+  <title>Embolden Partners | GTM Strategy &amp; Partnerships</title>
+
+  <style>
+    :root {
+      --bg: #1D1A35;
+      --bg-alt: #1A1629;
+      --surface: #352C4D;
+      --text: #FFFFFF;
+      --muted: rgba(255, 255, 255, 0.76);
+      --faint: rgba(217, 199, 255, 0.52);
+      --purple: #A480F2;
+      --purple-hover: #9080F2;
+      --border: #3D3556;
+      --divider: #2D2745;
+      --ink: #1A1629;
+      --max-width: 1080px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ::selection {
+      background: rgba(164, 128, 242, 0.38);
+      color: #FFFFFF;
+    }
+
+    .container {
+      width: min(calc(100% - 48px), var(--max-width));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-alt {
+      background: var(--bg-alt);
+    }
+
+    .section-surface {
+      border-top: 1px solid var(--divider);
+      border-bottom: 1px solid var(--divider);
+      background: var(--surface);
+    }
+
+    .eyebrow {
+      display: block;
+      margin-bottom: 15px;
+      color: var(--purple);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.11em;
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    blockquote,
+    .brand,
+    .metric-value {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+    }
+
+    h1 {
+      max-width: 825px;
+      margin-bottom: 24px;
+      font-size: clamp(43px, 6vw, 68px);
+      letter-spacing: -0.04em;
+      line-height: 1.07;
+    }
+
+    h2 {
+      max-width: 790px;
+      margin-bottom: 19px;
+      font-size: clamp(31px, 4vw, 45px);
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+    }
+
+    h3 {
+      margin-bottom: 13px;
+      font-size: 25px;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .accent {
+      color: var(--purple);
+    }
+
+    .lead {
+      max-width: 690px;
+      margin-bottom: 33px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.72;
+    }
+
+    .section-copy {
+      max-width: 745px;
+      margin-bottom: 41px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .body-copy {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    /* Navigation */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(61, 53, 86, 0.85);
+      background: rgba(29, 26, 53, 0.96);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 76px;
+      gap: 22px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      flex-shrink: 0;
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    .brand-symbol {
+      display: inline-block;
+      margin-right: 10px;
+      color: var(--purple);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -4px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .nav-link {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      transition: color 180ms ease;
+    }
+
+    .nav-link:hover {
+      color: var(--purple);
+    }
+
+    /* Buttons */
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 12px 22px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1;
+      transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease, color 180ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      border-color: var(--purple);
+      background: var(--purple);
+      color: var(--ink);
+    }
+
+    .button-primary:hover {
+      border-color: var(--purple-hover);
+      background: var(--purple-hover);
+    }
+
+    .button-secondary {
+      border-color: var(--border);
+      background: transparent;
+      color: var(--text);
+    }
+
+    .button-secondary:hover {
+      border-color: var(--purple);
+      background: rgba(164, 128, 242, 0.1);
+      color: var(--purple);
+    }
+
+    .button-nav {
+      min-height: 39px;
+      padding: 10px 17px;
+    }
+
+    /* Hero */
+
+    .hero {
+      display: flex;
+      align-items: center;
+      min-height: 570px;
+      padding-top: 108px;
+      padding-bottom: 98px;
+    }
+
+    .hero-content {
+      width: 100%;
+    }
+
+    /* Metrics */
+
+    .metrics {
+      border-top: 1px solid var(--divider);
+      border-bottom: 1px solid var(--divider);
+      background: var(--bg-alt);
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .metric {
+      display: flex;
+      min-height: 160px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 22px;
+      text-align: center;
+    }
+
+    .metric + .metric {
+      border-left: 1px solid var(--divider);
+    }
+
+    .metric-value {
+      display: block;
+      margin-bottom: 9px;
+      color: var(--purple);
+      font-size: clamp(29px, 3.2vw, 41px);
+      letter-spacing: -0.025em;
+      line-height: 1;
+    }
+
+    .metric-value.compact {
+      font-size: clamp(27px, 2.75vw, 34px);
+    }
+
+    .metric-label {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    /* Cards */
+
+    .grid-three {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .grid-two {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      min-height: 100%;
+      padding: 33px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--surface);
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .card:hover {
+      border-color: var(--purple);
+      box-shadow: 0 16px 38px rgba(0, 0, 0, 0.17);
+      transform: translateY(-3px);
+    }
+
+    .card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .service-card {
+      padding: 37px;
+    }
+
+    .service-number {
+      display: block;
+      margin-bottom: 20px;
+      color: var(--purple);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+    }
+
+    .service-card h3 {
+      font-size: 27px;
+    }
+
+    .service-card p {
+      margin-bottom: 22px;
+    }
+
+    .service-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .service-list li {
+      position: relative;
+      padding: 6px 0 6px 19px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .service-list li::before {
+      position: absolute;
+      top: 12px;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      border-radius: 999px;
+      background: var(--purple);
+      content: "";
+    }
+
+    /* Approach */
+
+    .approach-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+      gap: 80px;
+      align-items: start;
+    }
+
+    .approach-copy p {
+      margin-bottom: 20px;
+    }
+
+    .approach-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .timeline::before {
+      position: absolute;
+      top: 9px;
+      bottom: 8px;
+      left: 6px;
+      width: 2px;
+      background: var(--border);
+      content: "";
+    }
+
+    .phase {
+      position: relative;
+      padding-bottom: 39px;
+    }
+
+    .phase:last-child {
+      padding-bottom: 0;
+    }
+
+    .phase::before {
+      position: absolute;
+      top: 5px;
+      left: -30px;
+      width: 12px;
+      height: 12px;
+      border: 3px solid var(--bg);
+      border-radius: 50%;
+      background: var(--purple);
+      box-shadow: 0 0 0 1px var(--purple);
+      content: "";
+    }
+
+    .phase-label {
+      margin-bottom: 8px;
+      color: var(--purple);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      line-height: 1.2;
+    }
+
+    .phase h3 {
+      margin-bottom: 8px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .phase p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.68;
+    }
+
+    /* Tags */
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 11px;
+      margin-top: 30px;
+    }
+
+    .tag {
+      display: inline-flex;
+      min-height: 42px;
+      align-items: center;
+      padding: 9px 18px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease;
+    }
+
+    .tag:hover {
+      border-color: var(--purple);
+      background: rgba(164, 128, 242, 0.13);
+      color: #FFFFFF;
+    }
+
+    /* Quote */
+
+    .quote-wrap {
+      width: min(100%, 810px);
+      margin: 0 auto;
+    }
+
+    blockquote {
+      margin: 0 0 29px;
+      color: #FFFFFF;
+      font-size: clamp(29px, 4vw, 43px);
+      letter-spacing: -0.03em;
+      line-height: 1.3;
+    }
+
+    .quote-wrap .body-copy {
+      margin-bottom: 18px;
+    }
+
+    .quote-wrap .body-copy:last-child {
+      margin-bottom: 0;
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 112px 0;
+      text-align: center;
+    }
+
+    .cta h2 {
+      margin-right: auto;
+      margin-left: auto;
+      font-size: clamp(35px, 5vw, 53px);
+    }
+
+    .cta .section-copy {
+      max-width: 550px;
+      margin-right: auto;
+      margin-bottom: 32px;
+      margin-left: auto;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 29px 0;
+      border-top: 1px solid var(--divider);
+      background: var(--bg);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .footer-brand {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.2;
+    }
+
+    .copyright {
+      color: var(--faint);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: flex-end;
+      gap: 18px;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+      font-size: 13px;
+      transition: color 180ms ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--purple);
+    }
+
+    @media (max-width: 820px) {
+      .section {
+        padding: 72px 0;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 88px;
+        padding-bottom: 79px;
+      }
+
+      .grid-three {
+        grid-template-columns: 1fr;
+      }
+
+      .approach-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 14px;
+        text-align: center;
+      }
+
+      .footer-links {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .container {
+        width: min(calc(100% - 34px), var(--max-width));
+      }
+
+      .nav {
+        min-height: 68px;
+      }
+
+      .brand {
+        font-size: 18px;
+      }
+
+      .brand-symbol {
+        margin-right: 8px;
+        font-size: 16px;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      .nav-link {
+        display: none;
+      }
+
+      .button-nav {
+        min-height: 36px;
+        padding: 9px 14px;
+        font-size: 13px;
+      }
+
+      h1 {
+        font-size: clamp(39px, 12vw, 54px);
+      }
+
+      h2 {
+        font-size: 31px;
+      }
+
+      .lead,
+      .section-copy {
+        font-size: 16px;
+      }
+
+      .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .metric {
+        min-height: 135px;
+        padding: 25px 15px;
+      }
+
+      .metric:nth-child(3),
+      .metric:nth-child(4) {
+        border-top: 1px solid var(--divider);
+      }
+
+      .metric:nth-child(3) {
+        border-left: 0;
+      }
+
+      .grid-two {
+        grid-template-columns: 1fr;
+      }
+
+      .card,
+      .service-card {
+        padding: 28px 25px;
+      }
+
+      .button-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .button-row .button {
+        width: 100%;
+      }
+
+      .cta {
+        padding: 84px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="Embolden Partners home">
+          <span class="brand-symbol">&gt;&gt;&gt;</span>
+          Embolden Partners
+        </a>
+
+        <div class="nav-links">
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#approach">Approach</a>
+          <a class="nav-link" href="#sectors">Sectors</a>
+          <a class="button button-primary button-nav" href="#connect">Let's Connect</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="section hero">
+      <div class="container hero-content">
+        <span class="eyebrow">GTM Strategy &amp; Partnerships</span>
+
+        <h1>
+          Turning early traction into
+          <span class="accent">repeatable revenue.</span>
+        </h1>
+
+        <p class="lead">
+          Embolden Partners works with VC-backed founders and portfolio teams to build go-to-market strategy, partnership ecosystems, and commercial operating systems that scale. Operator-level depth, partnership fluency, and the systems thinking a GTM Partner brings on day one.
+        </p>
+
+        <div class="button-row">
+          <a class="button button-primary" href="#connect">Discuss GTM Acceleration</a>
+          <a class="button button-secondary" href="#services">Explore Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Experience and engagement scope">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric">
+            <span class="metric-value">13+</span>
+            <span class="metric-label">Years in tech &amp; enterprise</span>
+          </div>
+
+          <div class="metric">
+            <span class="metric-value compact">Seed → B</span>
+            <span class="metric-label">Stage range served</span>
+          </div>
+
+          <div class="metric">
+            <span class="metric-value compact">Google · X</span>
+            <span class="metric-label">Operator background</span>
+          </div>
+
+          <div class="metric">
+            <span class="metric-value">Global</span>
+            <span class="metric-label">Engagement delivery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow">Who Embolden Helps</span>
+        <h2>Built for founders and funds moving from traction to scale.</h2>
+
+        <div class="grid-three">
+          <article class="card">
+            <h3>VC-Backed Startups</h3>
+            <p>
+              Founders from pre-seed to Series B who need to build a repeatable revenue engine, not just close a few deals. Get the GTM architecture, sales infrastructure, and partnership pipeline that institutional growth requires.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>VC Platform &amp; Portfolio Teams</h3>
+            <p>
+              Funds and platform leaders who need a GTM partner to deliver commercial value across the portfolio. Portfolio workshops, commercial diligence support, board-ready GTM narratives, and founder enablement at scale.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Scaleups &amp; Growth-Stage Teams</h3>
+            <p>
+              Companies that have found product-market fit and need to operationalize growth. Sales process design, pipeline architecture, partner ecosystem development, and the operational foundation for defensible, repeatable execution.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <span class="eyebrow">Core Services</span>
+        <h2>The four pillars of commercial readiness.</h2>
+
+        <p class="section-copy">
+          From market entry to repeatable pipeline to partner ecosystems — the work a GTM Partner does to turn traction into durable revenue.
+        </p>
+
+        <div class="grid-two">
+          <article class="card service-card">
+            <span class="service-number">01</span>
+            <h3>GTM Architecture</h3>
+            <p>
+              Bring strategic clarity to market entry, ICP definition, positioning, and pricing. Translate technical complexity into market-ready messaging that resonates with enterprise buyers.
+            </p>
+            <ul class="service-list">
+              <li>ICP &amp; segmentation strategy</li>
+              <li>Market positioning &amp; penetration</li>
+              <li>Technical product positioning</li>
+              <li>Pricing &amp; packaging guidance</li>
+            </ul>
+          </article>
+
+          <article class="card service-card">
+            <span class="service-number">02</span>
+            <h3>Revenue Execution</h3>
+            <p>
+              Build the operating systems that make commercial strategy defensible and repeatable. From founder-led sales to scalable pipeline — the infrastructure that turns strategy into forecast.
+            </p>
+            <ul class="service-list">
+              <li>CRM strategy &amp; configuration</li>
+              <li>Pipeline architecture &amp; forecasting</li>
+              <li>Sales playbook design</li>
+              <li>Founder-to-executive sales training</li>
+            </ul>
+          </article>
+
+          <article class="card service-card">
+            <span class="service-number">03</span>
+            <h3>Strategic Partnerships</h3>
+            <p>
+              Design partnership ecosystems that accelerate time-to-market and open enterprise channels. Partner identification, relationship development, co-sell strategy, and the executive introductions that matter.
+            </p>
+            <ul class="service-list">
+              <li>Partnership strategy &amp; pipeline design</li>
+              <li>Channel &amp; ecosystem development</li>
+              <li>Co-sell &amp; GTM alliance frameworks</li>
+              <li>Enterprise account mapping &amp; access strategy</li>
+            </ul>
+          </article>
+
+          <article class="card service-card">
+            <span class="service-number">04</span>
+            <h3>Portfolio &amp; Investor Support</h3>
+            <p>
+              The work a GTM Partner does across a fund: commercial diligence on potential investments, portfolio-wide GTM workshops, board-ready revenue narratives, and founder enablement programs.
+            </p>
+            <ul class="service-list">
+              <li>Commercial due diligence support</li>
+              <li>Portfolio GTM workshops</li>
+              <li>Board-ready GTM narratives</li>
+              <li>Founder enablement &amp; coaching</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="approach">
+      <div class="container">
+        <div class="approach-grid">
+          <div class="approach-copy">
+            <span class="eyebrow">How Embolden Works</span>
+            <h2>Strategy and execution, not one or the other.</h2>
+
+            <p class="body-copy">
+              Most early-stage companies have a strategy problem that looks like an execution problem, or an execution problem that looks like a strategy problem. Embolden Partners works at both levels: clarifying the strategic direction and building the operational systems to deliver it.
+            </p>
+
+            <p class="body-copy">
+              Every engagement is bespoke to stage, market, and the specific commercial milestones that matter. Whether it's a 90-day sprint to sharpen GTM positioning or a fractional GTM partnership embedded with your team, the work is hands-on and built to last.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="phase">
+              <div class="phase-label">Days 0–30</div>
+              <h3>Diagnose &amp; Align</h3>
+              <p>
+                Assess the current GTM motion, ICP definition, pipeline health, and partnership landscape. Align founders and stakeholders on the highest-leverage path forward.
+              </p>
+            </article>
+
+            <article class="phase">
+              <div class="phase-label">Days 30–60</div>
+              <h3>Architect &amp; Build</h3>
+              <p>
+                Sharpen positioning and narrative, design the sales process, configure CRM and pipeline architecture, and map the partnership ecosystem that accelerates market entry.
+              </p>
+            </article>
+
+            <article class="phase">
+              <div class="phase-label">Days 60–90</div>
+              <h3>Activate &amp; Enable</h3>
+              <p>
+                Equip the team with playbooks, training, and the operating rhythm to sustain growth. Activate partner relationships and enterprise customer introductions. Leave the team stronger.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="sectors">
+      <div class="container">
+        <span class="eyebrow">Sector Fluency</span>
+        <h2>Deep experience where commercial complexity lives.</h2>
+
+        <p class="section-copy">
+          Enterprise-grade B2B and commercial experience across the sectors where GTM strategy and partnership development matter most.
+        </p>
+
+        <div class="tags">
+          <span class="tag">AI &amp; Machine Learning</span>
+          <span class="tag">Fintech &amp; AML</span>
+          <span class="tag">Cybersecurity</span>
+          <span class="tag">Enterprise SaaS</span>
+          <span class="tag">DeepTech</span>
+          <span class="tag">Health Tech</span>
+          <span class="tag">Developer Tools</span>
+          <span class="tag">Data &amp; Infrastructure</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-surface">
+      <div class="container">
+        <div class="quote-wrap">
+          <blockquote>
+            The <span class="accent">GTM Partner mindset</span> is operator-first: diagnose quickly, build the revenue system, activate the network, and equip founders to execute. That's the depth Embolden brings — ready to step into a portfolio and start creating commercial value on day one.
+          </blockquote>
+
+          <p class="body-copy">
+            Thirteen years inside enterprise GTM — including Google and X (formerly Twitter) — means the strategic frameworks are grounded in real revenue cycles, real enterprise sales motions, and real partnership negotiations. Not theory.
+          </p>
+
+          <p class="body-copy">
+            The work spans the full commercial stack: ICP and positioning, sales infrastructure, partnership ecosystems, and the founder coaching that turns product-market fit into durable growth. All delivered with the hands-on, globally available engagement model that early-stage companies actually need.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta" id="connect">
+      <div class="container">
+        <h2>Ready to build a strategy that scales?</h2>
+
+        <p class="section-copy">
+          For founders, funds, and portfolio teams building the next stage of growth. Let's discuss how Embolden Partners can help your company or portfolio create repeatable revenue.
+        </p>
+
+        <a class="button button-primary" href="mailto:emboldenpartners@gmail.com">Let's Connect</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">Embolden Partners</div>
+
+        <div class="copyright">
+          © 2026 Embolden Partners. All rights reserved.
+        </div>
+
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#approach">Approach</a>
+          <a href="mailto:emboldenpartners@gmail.com">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
